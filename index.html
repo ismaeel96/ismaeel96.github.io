@@ -40,6 +40,27 @@
         	color:#000 !important;
           	background-color: white;
         }
+	.parallax 
+	{
+		/* The image used */
+		background-image: url("https://i2.wp.com/www.solutionz.com/wp-content/uploads/2020/10/swimmer.png?w=1902&ssl=1");
+
+		/* Full height */
+		height: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	@media only screen and (max-device-width: 1366px) 
+	{
+		.parallax 
+		{
+			background-attachment: scroll;
+		}
+	}
     </STYLE>
 </HEAD>
 <body id="myPage">
@@ -88,7 +109,8 @@
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="https://i2.wp.com/www.solutionz.com/wp-content/uploads/2020/10/swimmer.png?w=1902&ssl=1" alt="Solutions Consultant" style="width:100%;min-height:350px;max-height:100%;">
+	<div class="parallax"></div>
+  <!--<img src="https://i2.wp.com/www.solutionz.com/wp-content/uploads/2020/10/swimmer.png?w=1902&ssl=1" alt="Solutions Consultant" style="width:100%;"><!--;min-height:350px;max-height:100%;">-->
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
   </div>
